@@ -1,0 +1,71 @@
+.job {
+  &__container {
+    padding: 97px 30px 0 46px;
+    &__title {
+      font-weight: 700;
+      font-size: 64px;
+      width: 100%;
+    }
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 22px;
+    
+    
+    &__card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      .job1 {
+        background: #c50018;
+        height: 431px;
+        width: 318px;
+      }
+      .job2 {
+        background: #7a00c5;
+        height: 431px;
+        width: 318px;
+      }
+      .job3 {
+        height: 431px;
+        width: 318px;
+        background: #2539ea;
+      }
+      .job4 {
+        height: 431px;
+        width: 318px;
+        background: #00a688;
+      }
+      .line{
+        position: absolute;
+        top: 32.5px;
+        width: 65px;
+        height: 1px;
+       background-color: #ffffff;
+       transform: rotate(90deg);
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #ffffff;
+       padding-top: 106px;
+       padding-left: 42px;
+      }
+      .icone{
+        width: 150px;
+        padding: 36px 84px;
+      }
+      .number{
+        position: absolute;
+        left: 318px;
+        top: 8px;
+        &__par{
+        transform: rotate(-90deg);
+    }
+      }
+    }
+    
+  }
+}

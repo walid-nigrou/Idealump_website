@@ -1,0 +1,15 @@
+.hero{  
+    &__container{
+        padding: 192px 30px 0 46px;
+        height: 50vh;
+    background-image: url(../images/Ellipse.jpg);
+    background-position-x: 605px;
+        background-repeat: no-repeat;
+        background-attachment: 621px;
+    &__title{
+        width: 1108px;
+        font-size: 100px;
+        line-height: 80%; 
+    }
+}
+}
