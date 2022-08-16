@@ -1,71 +1,82 @@
 .job {
+  position: relative;
+width: 100%;
   &__container {
-    padding: 97px 30px 0 46px;
     &__title {
       font-weight: 700;
       font-size: 64px;
       width: 100%;
     }
   }
-
   &__block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 22px;
-    
-    
     &__card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
       position: relative;
       .job1 {
         background: #c50018;
-        height: 431px;
-        width: 318px;
+        
+      }
+      .job1:hover {
+        background-image: url("../images/Icon\ 1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        
       }
       .job2 {
         background: #7a00c5;
-        height: 431px;
-        width: 318px;
+      }
+
+      .job2:hover {
+        background-image: url("../images/Icon2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
       }
       .job3 {
-        height: 431px;
-        width: 318px;
         background: #2539ea;
       }
+
+      .job3:hover {
+        background-image: url("../images/Icon3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
       .job4 {
-        height: 431px;
-        width: 318px;
         background: #00a688;
       }
-      .line{
+      .job4:hover:hover {
+        background-image: url("../images/Icon4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .line {
         position: absolute;
         top: 32.5px;
         width: 65px;
         height: 1px;
-       background-color: #ffffff;
-       transform: rotate(90deg);
+        background-color: #ffffff;
+        transform: rotate(90deg);
       }
       h3 {
         font-weight: 500;
         font-size: 24px;
         color: #ffffff;
-       padding-top: 106px;
-       padding-left: 42px;
+        padding-top: 106px;
+        padding-left: 42px;
       }
-      .icone{
+      .icone {
         width: 150px;
         padding: 36px 84px;
       }
-      .number{
-        position: absolute;
-        left: 318px;
-        top: 8px;
-        &__par{
-        transform: rotate(-90deg);
-    }
+      .number {
+        right: 0;
+        height: 100%;
+        &__par {
+          transform: rotate(-90deg);
+          padding: 1rem 0;
+        }
       }
     }
-    
   }
 }

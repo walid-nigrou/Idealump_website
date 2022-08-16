@@ -1,11 +1,7 @@
 .about {
+  position: relative;
+  padding-top: 1rem;
   &__container {
-    padding: 97px 30px 0 46px;
-    &__title {
-      font-weight: 700;
-      font-size: 64px;
-      width: 100%;
-    }
     &__paragraphe {
       width: 760px;
       font-weight: 400;
@@ -20,7 +16,7 @@
     }
     &__num {
       display: flex;
-      justify-content: end;
+      justify-content:flex-end;
 padding-top: 10px;
       .line {
         width: 156px;
