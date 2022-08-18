@@ -1,0 +1,31 @@
+.hero {
+height: 100%;
+    &__container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        &__title {
+            font-size: 100px;
+            width: 100%;
+            padding-top: 5rem;
+            background: white;
+        }
+    }
+    &__circle {
+        content: "";
+        width: 60vh;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        &.is--back{
+            mix-blend-mode: difference;
+            background: white;
+        }
+        &.is--front{
+            mix-blend-mode: lighten;
+            background: red;
+        }
+    }
+}

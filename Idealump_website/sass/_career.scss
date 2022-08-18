@@ -1,0 +1,36 @@
+.career {
+  &__container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 10%;
+  }
+  &__title {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    padding-bottom: 1rem;
+    &__line {
+      width: 35%;
+      height: 2px;
+      background: #000;
+    }
+  }
+
+  &__bottom {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    cursor: pointer;
+    height: 48px;
+    width: 150px;
+    border-radius: 4px;
+  }
+}
