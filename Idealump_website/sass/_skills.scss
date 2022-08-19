@@ -15,11 +15,11 @@
     gap: 2rem;
 
   }
- & &__item{
+  &__item{
   display: flex;
   align-items: center;
   justify-content: center;
-    width: 100%;
+   
     padding-bottom: 80%;
     position: relative;
     background-image: url("../images/javascriptlogo.jpg");
@@ -31,33 +31,90 @@
       font-size: 16px;
       color: black;
       position: absolute;
+      padding-top: 2rem;
       bottom: 0;
     }
   }
-    & &__item:nth-child(2){
+    &__item:nth-child(2){
      
         background-image: url("../images/php_logo.jpg");
       
     
   }
 
-  & &__item:nth-child(3){
+   &__item:nth-child(3){
      background-image: url("../images/jee-logo.jpg");
 }
 
-& &__item:nth-child(4){
+ &__item:nth-child(4){
   background-image: url("../images/pwa.jpg");
  
 }
 
-& &__item:nth-child(5){
+ &__item:nth-child(5){
   background-image: url("../images/reactive.jpg");
 
 }
 
-& &__item:nth-child(6){
+ &__item:nth-child(6){
   background-image: url("../images/vector.jpg");
 
 }
 
 }
+
+@media screen and (max-width: 1230px) {
+  .skills{
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  &__item__title{
+    bottom: 3rem;
+  }
+}
+}
+
+
+@media screen and (max-width: 940px) {
+  .skills{
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  &__item__title{
+    bottom: 3rem;
+  }
+}
+}
+
+
+@media screen and (max-width: 940px) {
+  .skills{
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  &__item__title{
+    bottom: 3rem;
+  }
+}
+}
+
+@media screen and (max-width: 640px) {
+  .skills{
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  &__item__title{
+    bottom: 8rem;
+  }
+}
+}
+
+

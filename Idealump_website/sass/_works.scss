@@ -3,11 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 5rem;
-    height: 100%;
-    width: 100%;
+    gap: 2%;
     border: 1px solid black;
-    border-width: 100%;
     border-left: 0;
     border-right: 0;
     &-left {
@@ -16,14 +13,10 @@
     }
 
     &-right {
-      padding: 1rem 0;
-      width: 100%;
       img {
         display: block;
-        margin-left: auto;
       }
     }
-
     .line {
       background-color: black;
       width: 1px;
@@ -32,35 +25,26 @@
       height: 100%;
     }
   }
-
-  &__descrp2 {
-    width: 668px;
-    display: block;
-    margin-left: auto;
-  }
   h3 {
     padding-top: 15px;
   }
 
-
-  .image1{
+  .image2 {
     position: relative;
   }
-    .hover{
-      position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-image: url("../images/hover.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-    }
-    .image1:hover .hover {
-opacity: 1;
+  .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-image: url("../images/hover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
   }
- 
-
+  .image2:hover .hover {
+    opacity: 1;
+  }
 }

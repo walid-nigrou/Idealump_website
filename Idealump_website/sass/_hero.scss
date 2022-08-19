@@ -1,5 +1,4 @@
 .hero {
-height: 100%;
     &__container {
         position: relative;
         width: 100%;
@@ -13,10 +12,10 @@ height: 100%;
     }
     &__circle {
         content: "";
-        width: 60vh;
+        width: 50vh;
         position: absolute;
-        top: 10%;
-        right: 10%;
+        top: 11%;
+        right: 8%;
         aspect-ratio: 1/1;
         border-radius: 50%;
         &.is--back{

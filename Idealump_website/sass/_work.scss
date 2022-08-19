@@ -1,0 +1,90 @@
+.work {
+  &__date {
+    display: flex;
+    padding-bottom: 4rem;
+    align-items: center;
+    &__line {
+      width: 10%;
+      height: 2px;
+      background: #000;
+    }
+    &__number {
+      padding-right: 12rem;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+    &__mounth {
+      padding-left: 1rem;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__description {
+    &__paragraphe {
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 48px;
+      text-align: left;
+      color: #000000;
+      padding: 8rem 0 2rem;
+    }
+  }
+
+  &__technologies {
+    padding: 2rem 0;
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+    &__link {
+      padding: 0.5rem 1rem;
+      background-color: #ebebeb;
+      color: #747474;
+    }
+    &__span {
+      color: #f50d03;
+    }
+  }
+
+  &__tools {
+    padding-bottom: 9rem;
+    &__paragraphe {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: left;
+      color: #000000;
+    }
+
+    &__block{
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+    }
+  }
+
+  .block__details{
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+&__span{
+    font-weight: 700;}
+  }
+}
+
