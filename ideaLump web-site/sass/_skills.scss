@@ -1,0 +1,91 @@
+.skills {
+  position: relative;
+  padding-top: 8rem;
+  &__container {
+    &__title {
+      font-weight: 700;
+      font-size: 64px;
+      width: 100%;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+  &__item {
+    min-width: 200px;
+    width: 100%;
+    flex: 0 0 200px;
+    position: relative;
+    background-image: url("../images/javascriptlogo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      color: black;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  &__item:nth-child(2) {
+    background-image: url("../images/php_logo.jpg");
+  }
+
+  &__item:nth-child(3) {
+    background-image: url("../images/jee-logo.jpg");
+  }
+
+  &__item:nth-child(4) {
+    background-image: url("../images/pwa.jpg");
+  }
+
+  &__item:nth-child(5) {
+    background-image: url("../images/reactive.jpg");
+  }
+
+  &__item:nth-child(6) {
+    background-image: url("../images/vector.jpg");
+  }
+}
+
+
+@media screen and (max-width: 1240px) {
+
+  .skills { &__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    
+  }
+  &__item{
+    max-height: 150px;
+  }
+}
+}
+
+@media screen and (max-width: 750px) {
+
+  .skills { &__list{
+    
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+}
+}
+
+@media screen and (max-width: 640px) {
+
+  .skills { &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }}
+}

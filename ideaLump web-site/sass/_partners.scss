@@ -1,0 +1,35 @@
+.partners {
+  position: relative;
+  padding-top: 10rem;
+  &__block {
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .partners {
+    &__block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+    }
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .partners {
+    &__block {
+      grid-template-columns: 1fr;
+    }
+  }
+}

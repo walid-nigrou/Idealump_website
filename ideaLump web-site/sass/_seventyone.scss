@@ -1,0 +1,40 @@
+.seventyone {
+  padding-top: 10rem;
+  &__container {
+    position: relative;
+    &__image {
+      width: 100%;
+      border-bottom: 1px solid black;
+      padding-bottom: 1rem;
+    }
+
+    .overlay {
+      position: absolute;
+      top: -35%;
+      height: 135%;
+      width: 96%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-image: url("../images/71hover.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 893px){
+  .seventyone { &__container{.overlay{
+    display: none;
+   
+  }
+}
+}
+}
