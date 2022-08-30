@@ -1,0 +1,57 @@
+.about {
+  position: relative;
+  padding-top: 6rem;
+  &__container {
+    &__bock{
+      display: flex;
+      flex-direction: column;
+    }
+    &__paragraphe {
+      width: 100%;
+      max-width: 760px;
+      font-weight: 400;
+      font-size: 16px;
+      padding-top: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    &__span{
+      font-weight: bold; 
+    }
+    &__images {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding-top: 6.5rem;
+      
+    }
+    &__image {
+      
+      display: block;
+      width: 100%;
+    }
+    &__line{
+      width: 16%;
+      height: 1px;
+      bottom:27.3rem;
+      left: 16%;
+      transform: rotateX(-90deg);
+      background: #000;
+      position: absolute;
+    }
+    &__num {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+      .line {
+        width: 8%;
+        height: 2px;
+        background: #000;
+        margin: auto 0;
+      }
+      .para {
+        padding-left: 16px;
+      }
+    }
+  }
+}

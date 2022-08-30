@@ -1,0 +1,50 @@
+.hero {
+    height: 100vh;
+    padding-top: 80px;
+    position: relative;
+   
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: calc(100% - 80px);
+        
+        &__title {
+            font-size: 7vw;
+            width: 100%;
+            line-height: 1.2;
+            
+        }
+    }
+    &__circle {
+        content: "";
+        width: calc(95vh - 80px);
+        position: absolute;
+        top: 0%;
+        right: 17%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        transition-delay: 0.2ms;
+        &.is--back{
+            mix-blend-mode: difference;
+            background: white;
+        }
+        &.is--front{
+            mix-blend-mode: lighten;
+            background: red;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .hero{
+        &__container{
+            &__title{
+                font-size: 48px;
+                
+            }
+        }
+    }
+}

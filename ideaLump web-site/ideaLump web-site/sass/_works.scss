@@ -1,0 +1,72 @@
+.works {
+  padding-top: 11rem;
+  &__achivement {
+    display: flex;
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+    &-left {
+      border-right: 1px solid black;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    &-right {
+      width: 100%;
+      padding: 1rem;
+    }
+    &__image{
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+    .hover {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-image: url("../images/hover.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    &__image:hover .hover {
+      opacity: 1;
+    }
+
+  }
+  &__descrp {
+    padding-top: 15px;
+    &__title{
+      text-transform: uppercase;
+font-size: 16px;
+font-weight: 700;
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 1230px) {
+
+  .works{
+    &__achivement{
+      display: grid;
+      grid-template-columns: 1fr;
+      &-left {
+        border-right: 0;
+        border-bottom: 1px solid black;
+        width: 95%;
+      }
+      &-right {
+        border-right: 0;
+        width: 95%;
+      }
+    }
+  }
+}
+
+
